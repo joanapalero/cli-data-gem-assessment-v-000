@@ -20,11 +20,6 @@ class TopArtists::Artists
       #Extract the properties
       #Instantiate artists 
       
-      #Go to billboard.com
-      #Extract the properties
-      #Instantiate artists 
-      
-      
       artists
       
       end

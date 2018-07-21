@@ -2,10 +2,9 @@ class TopArtists::Cli
 
   def call 
     puts "Welcome to Joana's Favorite Top 3 Artists"
-    puts " "
     list_artists
     main_menu
-    bye
+    # bye
   end
   
   def list_artists
@@ -32,8 +31,13 @@ class TopArtists::Cli
         puts "#{the_artist.name} Top 3 Songs - #{the_artist.songs}"
         elsif input == "list"
           list_artists
+        elsif input == "exit"  
+          bye
+        elsif input == "4"  
+          puts "Please try again. Type 'list' or 'exit'."
         else
           puts "Please try again. Type 'list' or 'exit'."
+        
       end
       
   end
