@@ -26,7 +26,7 @@ class TopArtists::Cli
     
     #logic for input
     #Choosing 4 caused the error
-      if input.to_i > 0 
+      if input.to_i > 0 && input.to_i < 4
         the_artist = @artists[input.to_i-1]
       puts "#{the_artist.name} Top 3 Songs - #{the_artist.songs}"
         elsif input == "list"
