@@ -25,6 +25,7 @@ class TopArtists::Cli
     input = gets.strip.downcase
     
     #logic for input
+    #Choosing 4 caused the error
       if input.to_i > 0 
         the_artist = @artists[input.to_i-1]
       puts "#{the_artist.name} Top 3 Songs - #{the_artist.songs}"
