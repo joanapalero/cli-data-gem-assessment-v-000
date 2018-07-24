@@ -4,12 +4,12 @@ Joana's CLI Data gem project:
 -Greet user, "Welcome to Joana's favorite top hit artists list."
 
 -User will then see a list of artists:
-  *1.Kendrick Lamar, SZA, The Weeknd
+  *1.Migos
   *2.Cardi B
   *3.Drake
   
 -A menu will come up with:
-  *Type 1 for Kendrick Lamar, SZA, The Weeknd
+  *Type 1 for Migos
   *Type 2 for Cardi B 
   *Type 3 for Drake
   *Type exit to exit this program
@@ -22,11 +22,9 @@ Joana's CLI Data gem project:
 
 **classes
 
-CLI - how we interact with the user - accepting input and displaying output.
+CLI - how we interact with the user - accepting input and displaying output. The scraper is within CLI. This class will scrape information from the top hits website to access the data.
 
-Scraper - this class will scrape information from the top hits website to access the data.
-
-artistSong - this class will hold all the information on the top hit songs and assign attributes to each top hit that gets instantiated.
+artists - this class will hold all the information on the top hit songs and assign attributes to each top hit that gets instantiated.
 
 **objects
 arist name

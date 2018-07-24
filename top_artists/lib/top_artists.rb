@@ -13,4 +13,3 @@ end
 require_relative "./top_artists/version"
 require_relative "./top_artists/cli"
 require_relative "./top_artists/artists"
-

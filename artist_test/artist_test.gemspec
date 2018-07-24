@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "top_artists/version"
+require "artist_test/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "top_artists"
-  spec.version       = TopArtists::VERSION
+  spec.name          = "artist_test"
+  spec.version       = ArtistTest::VERSION
   spec.authors       = ["'Joana Palero'"]
   spec.email         = ["'joana.palero24@gmail.com'"]
 
-  spec.summary       = "This is a list my favorite top 3 artists for summer 2018."
-  spec.description   = "This project will list my favorite top 3 artists with a song title."
-  spec.homepage      = "https://www.ranker.com/list/best-rap-albums-2018/ranker-music?ref=gnrtednxtlst&pos=1&ltype=l&l=2657569&g=2&a=0"
+  spec.summary       = "This is a summary."
+  spec.description   = "This is a description."
+  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -29,12 +29,10 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   spec.bindir        = "exe"
-  spec.executables   = "top_artists"
+  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  
-  spec.add_dependency "nokogiri"
 end

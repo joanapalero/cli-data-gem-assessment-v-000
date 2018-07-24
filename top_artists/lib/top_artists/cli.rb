@@ -4,7 +4,6 @@ class TopArtists::Cli
     puts "Welcome to Joana's Favorite Top 3 Artists"
     list_artists
     main_menu
-    # bye
   end
   
   def list_artists
@@ -23,23 +22,19 @@ class TopArtists::Cli
       puts "Enter the number that corresponds to each artist."
       puts "Enter 'list' to see a list of artists or 'exit'."
       puts " "
-      input = gets.strip.downcase
+    input = gets.strip.downcase
     
     #logic for input
       if input.to_i > 0 
         the_artist = @artists[input.to_i-1]
-        puts "#{the_artist.name} Top 3 Songs - #{the_artist.songs}"
+      puts "#{the_artist.name} Top 3 Songs - #{the_artist.songs}"
         elsif input == "list"
           list_artists
         elsif input == "exit"  
           bye
-        elsif input == "4"  
-          puts "Please try again. Type 'list' or 'exit'."
         else
-          puts "Please try again. Type 'list' or 'exit'."
-        
-      end
-      
+      puts "Please try again. Type 'list' or 'exit'."
+    end
   end
 end
   

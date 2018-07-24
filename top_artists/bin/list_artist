@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
-#require_relative "../lib/top_artists"
 require "bundler/setup"
-require "top_artists"
+require_relative "../lib/top_artists"
 
 TopArtists::Cli.new.call

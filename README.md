@@ -32,7 +32,7 @@ Take the time to clone, run and look through the code for both of these in detai
 
 1. Watch this [video walkthrough](https://www.youtube.com/watch?v=_lDExWIhYKI) of building a CLI Gem called [Daily Deal](https://github.com/learn-co-curriculum/daily_deal) before you begin.
 2. Create a new repository on GitHub for your application, ie: `name-cli-app`.
-3. When you create the CLI app for your assessment, add the spec.md file from this repo to the root directory of the project, commit it to Git and push it up to GitHub.
+3. When you create the CLI app for your assessment, add the spec.md fithle from this repo to the root directory of the project, commit it to Git and push it up to GitHub.
 4. Build your application. Make sure to commit early and commit often. Commit messages should be meaningful (clearly describe what you're doing in the commit) and accurate (there should be nothing in the commit that doesn't match the description in the commit message). Good rule of thumb is to commit every 3-7 mins of actual coding time. Most of your commits should have under 15 lines of code and a 2 line commit is perfectly acceptable. **This is important and you'll be graded on this**.
 5. Make sure to create a good README.md with a short description, install instructions, a contributors guide and a link to the license for your code.
 6. While you're working on it, record a 30 min coding session with your favorite screen capture tool. During the session, either think out loud or not. It's up to you. You don't need to submit the video, but we may ask for it at a later time.
